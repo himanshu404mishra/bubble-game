@@ -1,0 +1,99 @@
+@import url("./fonts.css");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gilroy-regular;
+
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+#main{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(155, 184, 155);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pannel{
+  height: 80%;
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#p-top{
+  padding: 0 20%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(72, 104, 72);
+}
+.elem{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.elem h2{
+  font-weight: 500;
+  font-size: 22px;
+}
+.box{
+  padding: 10px 20px;
+  background-color: white;
+  color: rgb(18, 119, 57);
+  font-weight: 600;
+  font-size: 22px;
+  border-radius: 5px;
+}
+#p-btm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  height: calc(100% - 100px);
+  padding: 20px;
+}
+
+.bubble{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(72, 104, 72);
+  color: white;
+  border-radius: 50%;
+  font-weight: 500;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  position: relative;
+  transition: transform .2s linear;
+}
+.bubble:hover{
+  cursor: pointer;
+  background-color: rgb(50, 75, 50);
+}
+.back{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(72, 104, 72);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
